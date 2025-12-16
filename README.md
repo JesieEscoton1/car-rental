@@ -16,6 +16,21 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+3. Scan the QR code with Expo Go app on your phone
+
+   - Make sure your phone and computer are on the same Wi-Fi network
+   - Open Expo Go app on your phone
+   - Scan the QR code from the terminal
+   - If the QR code doesn't work, press `s` in the terminal to switch to tunnel mode
+
+## Troubleshooting
+
+If you can't connect with Expo Go:
+- Ensure your phone and computer are on the same Wi-Fi network
+- Try tunnel mode: press `s` in the Expo CLI terminal
+- Check Windows Firewall: allow Node.js through the firewall
+- Try restarting the Expo server: `npx expo start --clear`
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
@@ -30,7 +45,7 @@ You can start developing by editing the files inside the **app** directory. This
 When you're ready, run:
 
 ```bash
-npm run reset-project
+npm run reset-project  
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
