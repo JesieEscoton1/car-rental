@@ -12,7 +12,7 @@ export default function HomeScreen() {
       type: "Sedan",
       price: 45,
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400",
+      image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function HomeScreen() {
       type: "SUV",
       price: 65,
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0ad6?w=400",
+      image: "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=400",
     },
     {
       id: 3,
@@ -96,8 +96,9 @@ export default function HomeScreen() {
               <TouchableOpacity className="w-64 bg-white rounded-lg border border-border overflow-hidden shadow-sm mr-4">
                 <Image
                   source={{ uri: car.image }}
-                  className="w-full h-40"
+                  style={{ width: '100%', height: 100 }}
                   contentFit="cover"
+                  transition={200}
                 />
                 <View className="p-4">
                   <View className="flex-row items-start justify-between mb-2">

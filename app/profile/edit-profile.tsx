@@ -11,7 +11,7 @@ export default function EditProfileScreen() {
 
   return (
     <ScrollView className="flex-1 bg-white" contentContainerStyle={{ flexGrow: 1 }}>
-      <View className="flex flex-col items-stretch justify-start p-6 pt-16">
+      <View className="flex flex-col items-stretch justify-start p-6 pt-12">
         {/* Header */}
         <View className="flex-row items-center justify-between mb-6">
           <TouchableOpacity onPress={() => router.back()}>
